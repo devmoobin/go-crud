@@ -1,0 +1,21 @@
+go get -u github.com/gin-gonic/gin
+go get -u gorm.io/gorm
+go get -u gorm.io/driver/postgres
+go get github.com/joho/godotenv
+go install github.com/cosmtrek/air@latest
+-----------------------------------------------------
+go mod init devmoobin/go-crud
+go run migrate/migrate.go // รันคำสั่ง migrate เพื่อสร้างตาราง
+
+
+--------------------------------------------------
+
+github
+
+git init  // สร้างไฟล์  .git
+ls -h     //แสดง File ที่ซ่อนอยู่ในโปรเจ็ค
+git add .   //เอาโปรเจ็คทั้งหมดขึ้น Git
+git commit -m "first commit"  
+git branch -M main
+git remote add origin https://github.com/devmoobin/go-crud.git 
+git push -u origin main
